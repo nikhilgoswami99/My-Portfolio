@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans';
+    color: white;
+}
+
+html {
+    
+    --image-gradient: linear-gradient(
+      to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863)
+    );
+  
+    --imp-text-color: #c770f0;
+  }
+  
+
+#root {
+    background-image: var(--image-gradient), url(./assets/Hexagon2.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+/* "https://soumyajit.vercel.app/static/media/home-bg.dc52d5d40a40b13154b0.jpg" */
+

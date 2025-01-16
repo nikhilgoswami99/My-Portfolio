@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting {
+    min-height: 50vh;
+    width: 100%;
+    border: 2px solid orange;
+}
+
