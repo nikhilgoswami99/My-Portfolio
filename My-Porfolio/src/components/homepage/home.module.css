@@ -1,5 +1,6 @@
 .main {
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 100vh;
     align-items: center;
@@ -7,8 +8,62 @@
 }
 
 .greeting {
-    min-height: 50vh;
+    min-height: 100vh;
     width: 100%;
-    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 3rem;
+}
+
+.greeting_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.greet_heading {
+    font-size: 3rem;
+}
+
+.cartoonImg {
+    height: 400px;
+    transition: all 1s;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 15px rgb(169, 10, 201));
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.intro_text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    line-height: 2rem;
+}
+
+.intro_heading {
+    font-size: 2rem;
+}
+
+.intro_para {
+    font-size: larger;
+}
+
+.intro_img {
+    height: 350px;
+    filter: drop-shadow(0px 0px 15px rgb(169, 10, 201));
+    cursor: pointer;
 }
 

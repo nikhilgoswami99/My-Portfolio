@@ -1,6 +1,6 @@
 .navbar {
     position: sticky;
-    top: 0;
+    top: 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -9,9 +9,9 @@
     font-size: 1.3rem;
     font-weight: bold;
     color: white;
-    background-color: rgba(82, 41, 121, 0);
+    /* background-color: rgba(82, 41, 121, 0); */
     backdrop-filter: blur(15px);
-    box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+    box-shadow: 0px 1px 5px 1px rgba(169, 10, 201, 0.5);
     z-index: 1000;
 }
 

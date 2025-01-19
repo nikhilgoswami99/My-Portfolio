@@ -5,11 +5,11 @@ function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div>
-          <Link className={styles.navbar_icon} to={"home"}>NG</Link>
+          <Link className={styles.navbar_icon} to={"/"}>NG</Link>
         </div>
         <ul className={styles.navbar_links}>
           <li>
-            <Link className={styles.links} to={"home"}>
+            <Link className={styles.links} to={"/"}>
               Home
             </Link>
           </li>

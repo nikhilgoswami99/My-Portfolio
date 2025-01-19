@@ -14,7 +14,7 @@ html {
       rgba(12, 10, 22, 0.863)
     );
   
-    --imp-text-color: #c770f0;
+    --imp-text-color: #ce56c8;
   }
   
 
@@ -22,7 +22,13 @@ html {
     background-image: var(--image-gradient), url(./assets/Hexagon2.svg);
     background-position: right center;
     background-repeat: no-repeat;
+    background-size:inherit;
 }
 
-/* "https://soumyajit.vercel.app/static/media/home-bg.dc52d5d40a40b13154b0.jpg" */
+.voilet_text, .Typewriter__wrapper {
+  color: var(--imp-text-color);
+}
+
+
+
 
