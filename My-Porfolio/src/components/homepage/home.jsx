@@ -44,7 +44,7 @@ function Home() {
               I am proficient in core programming languages such as{" "}
               <span className="voilet_text">Java and JavaScript</span>. My
               primary interests lie in building innovative{" "}
-              <span className="voilet_text">web technologies and products</span>
+              <span className="voilet_text">Web Technologies and Products</span>
               .
             </p>
             <p className={styles.intro_para}>

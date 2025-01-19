@@ -13,7 +13,7 @@ function Footer() {
         <div className={styles.developer}>
           Designed and Developed by Nikhil Goswami
         </div>
-        <div className={styles.copyright}>Copyright © 2025 NG</div>
+        <div className={styles.copyright}>Copyright <span className={styles.copy_right}>©</span> 2025 NG</div>
           <ul className={styles.socialLinks}>
             <li className={styles.socialIcons}>
               <a

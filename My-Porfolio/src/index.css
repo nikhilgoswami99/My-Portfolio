@@ -18,8 +18,9 @@ html {
   }
   
 
-#root {
-    background-image: var(--image-gradient), url(./assets/Hexagon2.svg);
+body {
+    /* background-image: var(--image-gradient), url(./assets/Hexagon2.svg); */
+    background-color: rgb(22, 17, 37) !important;
     background-position: right center;
     background-repeat: no-repeat;
     background-size:inherit;
@@ -28,6 +29,7 @@ html {
 .voilet_text, .Typewriter__wrapper {
   color: var(--imp-text-color);
 }
+
 
 
 
