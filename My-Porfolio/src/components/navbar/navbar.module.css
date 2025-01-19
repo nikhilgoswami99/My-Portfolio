@@ -3,6 +3,7 @@
     top: 0px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 1.3rem;
@@ -33,4 +34,15 @@
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+   .navbar {
+    flex-direction: column;
+   }
+
+   .navbar_links {
+    flex-direction: column;
+   }
 }

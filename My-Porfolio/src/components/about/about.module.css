@@ -85,3 +85,11 @@
     
 }
 
+
+
+@media screen and (max-width: 800px) {
+    .skills_container div {
+        display: none;
+    }
+  }
+
