@@ -9,6 +9,8 @@
 }
 .socialLinks {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     gap: 2rem;
 }
@@ -52,12 +54,11 @@
     }
 
     .socialIcons {
-        font-size: 1rem;
-        /* height: auto;
-        max-width: 20%; */
+        font-size: 1.25rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: end;
+        align-items: center;
     }
 
  }
