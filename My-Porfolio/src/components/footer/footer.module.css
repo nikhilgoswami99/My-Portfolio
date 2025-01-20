@@ -40,8 +40,26 @@
 
 @media screen and (max-width: 800px) {
     .socialLinks {
-        flex-direction: column;
+        gap: 1rem;
     }
+
+    .developer, .copyright {
+        text-align: center;
+    }
+
+    footer {
+        gap: 1.5rem;
+    }
+
+    .socialIcons {
+        font-size: 1rem;
+        /* height: auto;
+        max-width: 20%; */
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
  }
 
 

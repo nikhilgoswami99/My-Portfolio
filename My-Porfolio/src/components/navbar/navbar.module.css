@@ -43,6 +43,6 @@
    }
 
    .navbar_links {
-    flex-direction: column;
+    display: none;
    }
 }
