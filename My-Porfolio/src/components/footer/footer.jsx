@@ -17,7 +17,7 @@ function Footer() {
           <ul className={styles.socialLinks}>
             <li className={styles.socialIcons}>
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/nikhilgoswami99"
                 target="_blank"
                 rel="noreferrer"
                 className={`${styles.iconColour} ${styles.homeSocialIcons}`}
@@ -27,8 +27,8 @@ function Footer() {
             </li>
             <li className={styles.socialIcons}>
               <a
-                href="https://twitter.com/Soumyajit4419"
-                target="_blank"
+                href="/"
+                target="_parent"
                 rel="noreferrer"
                 className={`${styles.iconColour} ${styles.homeSocialIcons}`}
               >
@@ -37,7 +37,7 @@ function Footer() {
             </li>
             <li className={styles.socialIcons}>
               <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
+                href="https://www.linkedin.com/in/nikhil-goswami-067547214/"
                 target="_blank"
                 rel="noreferrer"
                 className={`${styles.iconColour} ${styles.homeSocialIcons}`}
@@ -47,8 +47,8 @@ function Footer() {
             </li>
             <li className={styles.socialIcons}>
               <a
-                href="https://www.instagram.com/soumyajit4419"
-                target="_blank"
+                href="/"
+                target="_top"
                 rel="noreferrer"
                 className={`${styles.iconColour} ${styles.homeSocialIcons}`}
               >
