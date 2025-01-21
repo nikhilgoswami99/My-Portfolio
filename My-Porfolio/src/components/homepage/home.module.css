@@ -85,7 +85,7 @@
 
     .introduction {
         flex-direction: column;
-        gap: 5rem;
+        gap: 2rem;
     }
 
     .intro_heading {
