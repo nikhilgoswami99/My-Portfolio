@@ -40,9 +40,12 @@
 @media screen and (max-width: 800px) {
    .navbar {
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
    }
 
    .navbar_links {
-    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
    }
 }
