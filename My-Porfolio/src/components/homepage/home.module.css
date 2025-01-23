@@ -15,6 +15,7 @@
     justify-content: center;
     gap: 5rem;
     font-size: 2.5rem;
+    padding: 1.3rem;
 }
 
 .greeting_text {
@@ -23,6 +24,10 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.hidden_links {
+    transition: all 2s;
 }
 
 .greet_heading {

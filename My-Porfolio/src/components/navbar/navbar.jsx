@@ -18,7 +18,7 @@ function Navbar() {
 
   function NavLinks() {
     return (
-      <ul className={isActive? styles.navbar_links : styles.show_navbar_links}>
+      <ul className={` ${styles.navbar_links}   ${isActive? styles.hidden_links : styles.show_navbar_links}`}>
         <li>
           <Link className={styles.links} to={"/"}>
             Home
