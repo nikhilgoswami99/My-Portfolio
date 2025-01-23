@@ -18,11 +18,14 @@
 
 .navbar_icon {
     cursor: pointer;
-    color: white;
+    color: orange;
     text-decoration: none;
+    padding: 0.5rem;
+    border: 3px solid orange;
+    border-radius: 30%;
+    height: 100px;
+    width: 100px;
 }
-
-
 
 .navbar_links {
     display: flex;
@@ -36,7 +39,7 @@
 .links {
     text-decoration: none;
     color: white;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .hamburger {
@@ -72,6 +75,10 @@
     flex-direction: column;
     gap: 2rem;
   
+   }
+
+   .hidden_links {
+    transition: all 3s ease !important;
    }
 
    .hamburger {
