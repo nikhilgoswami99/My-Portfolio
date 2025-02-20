@@ -1,5 +1,5 @@
 import styles from "./resume.module.css";
-import resume from "../../assets/Nikhil Goswami.png";
+import resume from "../../assets/Nikhil Goswami.jpg";
 
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
