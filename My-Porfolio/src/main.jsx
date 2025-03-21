@@ -1,10 +1,10 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Home from './components/homepage/home.jsx'
-import About from './components/about/about.jsx'
-import Resume from './components/resume/resume.jsx'
-import Projects from './components/projects/projects.jsx'
+import Home from './pages/homepage/home.jsx'
+import About from './pages/about/about.jsx'
+import Resume from './pages/resume/resume.jsx'
+import Projects from './pages/projects/projects.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 const router = createBrowserRouter([
     {
