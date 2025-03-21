@@ -16,7 +16,7 @@ function Projects()
                 Developed a full-stack e-commerce platform using React.js (Vite) and Firebase with Amazon Product Data API. Used React Context API for state management and integrated Gemini AI for smart cart to get product details.
                 </p>
                 <button className={styles.hosted_link}>
-                <a href="https://amazon-clone-git-main-nikhil-goswamis-projects.vercel.app/">Hosted Link</a>
+                <a target='_blank' href="https://amazon-clone-git-main-nikhil-goswamis-projects.vercel.app/">Hosted Link</a>
                 </button>
             </div>
         </div>
