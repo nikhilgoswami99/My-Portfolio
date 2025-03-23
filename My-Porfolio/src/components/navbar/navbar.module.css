@@ -1,6 +1,7 @@
 .navbar {
     position: sticky;
     top: 0px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +13,7 @@
     color: white;
     /* background-color: rgba(82, 41, 121, 0); */
     backdrop-filter: blur(15px);
+    background-color: rgb(11, 4, 22);
     box-shadow: 0px 1px 5px 1px rgba(169, 10, 201, 0.5);
     z-index: 1000;
 }
@@ -39,7 +41,7 @@
 .links {
     text-decoration: none;
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .hamburger {
@@ -52,40 +54,47 @@
 
 .close {
     display: none;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-
-
 @media screen and (max-width: 800px) {
-   .navbar {
-    justify-content: space-between;
-    align-items: start;
-    background-color: rgb(11, 4, 22);
+    .navbar {
+        justify-content: space-between;
+        background-color: rgb(11, 4, 22);
+        box-shadow: none;
+    }
     
-   }
+    .navbar_links {
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: rgb(11, 4, 22);
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        width: 100%;
+    }
+    
+    .show_navbar_links {
+        height: 200px;
+        /* overflow-y: auto; */
+        /* padding: 1rem 0; */
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .close {
+        display: flex;
+    }
 
-   .navbar_links {
-    display: none;
-   }
-
-   .show_navbar_links {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  
-   }
-
-   .hidden_links {
-    transition: all 3s ease !important;
-   }
-
-   .hamburger {
-    display: flex;
-   }
-
-   .close {
-    display: flex;
-   }
+    .hamburger, .close {
+        transition: transform 0.5s ease, opacity 0.3s ease;
+      }
+      
 }

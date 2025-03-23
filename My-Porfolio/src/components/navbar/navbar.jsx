@@ -1,56 +1,14 @@
 import styles from "./navbar.module.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import { useState } from "react";
 
 function Navbar() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
-  function openLinks() {
-
-    setIsActive(false);
-  }
-
-  function closeLinks() {
-    setIsActive(true);
-  }
-
-  function NavLinks() {
-    return (
-      <ul className={` ${styles.navbar_links}   ${isActive? styles.hidden_links : styles.show_navbar_links}`}>
-        <li>
-          <Link className={styles.links} to={"/"}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.links} to={"about"}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.links} to={"projects"}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.links} to={"resume"}>
-            Resume
-          </Link>
-        </li>
-      </ul>
-    );
-  }
-
-  function MenuButton(props) {
-    if (props.isActive) {
-      return (
-        <GiHamburgerMenu onClick={openLinks} className={styles.hamburger} />
-      );
-    } else {
-      return <CgClose onClick={closeLinks} className={styles.close} />;
-    }
+  function toggleMenu() {
+    setIsActive(!isActive);
   }
 
   return (
@@ -62,9 +20,34 @@ function Navbar() {
           </Link>
         </div>
 
-        <NavLinks></NavLinks>
+        <ul className={`${styles.navbar_links} ${isActive ? styles.show_navbar_links : ""}`}>
+          <li>
+            <Link className={styles.links} to={"/"}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.links} to={"about"}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.links} to={"projects"}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link className={styles.links} to={"resume"}>
+              Resume
+            </Link>
+          </li>
+        </ul>
 
-        <MenuButton isActive={isActive}></MenuButton>
+        {isActive ? (
+          <CgClose onClick={toggleMenu} className={styles.close} />
+        ) : (
+          <GiHamburgerMenu onClick={toggleMenu} className={styles.hamburger} />
+        )}
       </nav>
     </>
   );
