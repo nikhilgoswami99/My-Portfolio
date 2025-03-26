@@ -31,6 +31,9 @@ body {
     /* background-size:cover; */
 }
 
+
+
+
 .voilet_text, .Typewriter__wrapper {
   color: var(--imp-text-color);
 }
